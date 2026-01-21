@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>The Fascinating World of Octopuses</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -33,12 +34,13 @@
         </ul>
 
         <!-- Anatomy -->
+        <div class="anatomy"></div>
         <h4>Anatomy</h4>
         <p>
             An octopus's anatomy is as unique as it is fascinating.
             The <span class="important">mantle</span>, for example, helps in respiration and jet propulsion.
         </p>
-
+        <div>
         <!-- Comparison with other Cephalopods -->
         <h5>Comparison with Other Cephalopods</h5>
         <!-- Ordered list -->
@@ -62,6 +64,8 @@
             <!-- Image -->
             <img src="octopus-image.png" alt="Image of an octopus" width="100">
 
+            <!--Added to keep text as block with grid-->
+            <div class="quiz-text">
             <h2>Octopus Quiz</h2>
             <form action="/submit-quiz" method="POST">
                 <!-- Question 1 -->
@@ -74,11 +78,14 @@
 
                 <input type="submit" value="Submit Quiz">
             </form>
+            </div>
         </div>
 
     </div> <!-- End of main-content -->
 
+
     <!-- Table -->
+     
     <div id="species-table">
         <h2>Common Octopus Species</h2>
         <table border="1">

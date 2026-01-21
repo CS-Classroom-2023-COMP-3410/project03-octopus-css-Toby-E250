@@ -1,0 +1,108 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    /*sets header as close to the same color as i could get
+    as well as other parts of box model*/
+    background-color: rgb(0, 140, 255);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#header h1 {
+    /*sets title font size*/
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+#header p {
+    /*sets below title font size and makes italic*/
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+#main-content {
+    /*Adds left margin, slightly increases font size, 
+    and sets the font weight*/
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 450;
+}
+
+
+#main-content h2 {
+    /*makes octopus quiz text uppercase*/
+    text-transform: uppercase;
+}
+
+.important {
+    /*sets color of text "mantle" and makes it bold*/
+    color: red;
+    font-weight: 600;
+}
+
+#quiz-section {
+    /*sets background and border color for octopus 
+    quiz section as well as border and padding*/
+    background-color: lightcyan;
+    margin: 20px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+
+    /*creates grid so that octopus and text can be 
+    inline next to each other and also flipped*/
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-row: 1;
+    grid-column: 1;
+
+    
+}
+
+
+#quiz-section img {
+    /*sets image column and row and creates border, 
+    as well as adjusts for being too far right*/
+    grid-row:1;
+    grid-column: 2;
+    border: 5px solid purple;
+    margin-right: 50px;
+}
+
+#species-table th{
+    /*sets  just the table header color to light grey*/
+    background-color: lightgrey;
+}
+
+#species-table h2 {
+    margin-bottom: 0;
+}
+
+th {
+    /*adds padding to boxes*/
+    padding: 12px 20px; 
+}
+
+td {
+    /*adds padding for boxes*/
+    padding: 12px 20px;  
+}
+#footer {
+    /*creates footer background box color*/
+    background-color: lightgrey;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding: 5px;
+    width: 100%;
+}
